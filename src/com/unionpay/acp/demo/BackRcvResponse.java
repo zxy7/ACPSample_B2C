@@ -58,7 +58,7 @@ public class BackRcvResponse extends HttpServlet{
 			throws ServletException, IOException {
 
 		LogUtil.writeLog("BackRcvResponse接收后台通知开始");
-		
+		System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhha"+req);
 		String encoding = req.getParameter(SDKConstants.param_encoding);
 		// 获取银联通知服务器发送的后台通知参数
 		Map<String, String> reqParam = getAllRequestParamStream(req);
